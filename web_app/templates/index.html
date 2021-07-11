@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title> Deep Fake Video Generation</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href='static/index.css'> 
+        <script src='static/img_show.js'></script>
+    </head>
+    <body style="background-color:black;">
+        <div style="padding:170px 450px 150px 500px; height: 700px">
+
+            <div>
+                <h3>Deep Fake Video Generation</h3>
+            </div>
+
+            <div>
+                <form action="/result" method="post" enctype="multipart/form-data">
+                    <label for="src_video">Source Video:</label>
+                    <input type="file" id="myFile" name='src_video' onchange="readURL(this);" >
+
+                    <br>
+                    <div class='input2'>
+                    <label for="image" style="padding-left:50px">Image:</label>
+                    <input type="file" id="image" name='img' onchange="readURL(this);">
+                    </div>
+
+                    <br>
+                    <div style="padding-left:150px">
+                    <input type="submit" value='Generate'>
+                    </div>
+                   
+                </form>
+            </div>
+            
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
